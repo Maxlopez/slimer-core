@@ -20,5 +20,6 @@
         "Slimer\\": "src/Slimer"
     	}
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
