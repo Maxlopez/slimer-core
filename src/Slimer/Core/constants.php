@@ -6,7 +6,7 @@
 |-----------------------------------------------------------------------------------
 */
 if ( !defined('ABSPATH') ){
-	define('ABSPATH',  dirname( dirname( dirname(__FILE__) ) ) );
+	define('ABSPATH',  dirname( dirname( dirname( dirname( dirname( dirname( dirname(__FILE__) ) ) ) ) ) ) );
 }
 
 /*
@@ -24,5 +24,5 @@ if ( !defined('APP_PATH') ){
 |-----------------------------------------------------------------------------------
 */
 if ( !defined('SLIMER_PATH') ){
-	define('SLIMER_PATH',  ABSPATH . '/slimer');
+	define('SLIMER_PATH',  dirname( dirname(__FILE__) ) );
 }

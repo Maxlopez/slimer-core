@@ -6,9 +6,9 @@ return array(
 
     //Twig settings
     'view' => array(
-      'template_path' => dirname( dirname(__FILE__) ) . '/app/Views',
+      'template_path' => ABSPATH . '/app/Views',
       'twig' => array(
-        'cache' => dirname( dirname(__FILE__) ) . '/cache/twig',
+        'cache' => ABSPATH . '/cache/twig',
         'debug' => true,
         'auto_reload' => true,
       ),
@@ -17,7 +17,7 @@ return array(
     //Monolog settings
     'logger' => array(
       'name' => 'slimer-app',
-      'path' => isset( $_ENV['docker'] ) ? 'php://stdout' : dirname( dirname(__FILE__) ) . '/logs/app.log',
+      'path' => isset( $_ENV['docker'] ) ? 'php://stdout' : ABSPATH . '/logs/app.log',
       'level' => \Monolog\Logger::DEBUG,
     ),
   ),
