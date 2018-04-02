@@ -19,7 +19,5 @@
     	"psr-4": {
         "Slimer\\": "src/Slimer"
     	}
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
